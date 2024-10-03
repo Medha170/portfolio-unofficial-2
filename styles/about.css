@@ -1,0 +1,77 @@
+/* Container Styling */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: white; 
+  color: #215893; /* Dark Blue text */
+}
+
+/* Image Container Styling */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: cover; /* Ensures the image is properly cropped */
+  border-radius: 50%; /* Makes the image circular */
+  border: 5px solid #A0DEFF; /* Slightly darker blue border */
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-container {
+  width: 250px; /* Set a fixed width */
+  height: 250px; /* Set a fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the image does not overflow */
+}
+
+
+/* About Section Styling */
+.about-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.about-section h1 {
+  font-size: 36px;
+  color: #007BFF; /* Bright Blue for headings */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Button Styling for Animation Trigger */
+.about-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-section button:hover {
+  background-color: #215893;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

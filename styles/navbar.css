@@ -1,0 +1,96 @@
+#menu .item a.active {
+    color: #1da1f2; /* Change this to your desired active link color */
+    font-weight: bold; /* Optional: make active link bold */
+}
+
+#navbar {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 2px solid #007BFF; /* Adding a subtle bottom border */
+}
+
+#navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+#logo img {
+    width: 15rem;
+    height: 3.5rem;
+}
+
+/* Menu */
+#menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    margin-left: 20px;
+}
+
+#menu ul li a {
+    color: #215893; /* Dark text color for contrast */
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+#menu ul li a:hover {
+    background-color: #f2f2f2; /* Subtle hover background */
+    color: #007BFF; /* Add a blue color for hover */
+}
+
+/* Responsive: Hide menu for smaller screens */
+@media screen and (max-width: 768px) {
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: white; /* White background for mobile menu */
+        width: 200px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Adding some shadow */
+    }
+
+    #menu ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    #menu ul li a {
+        padding: 10px;
+        display: block;
+    }
+
+    /* Toggle Button for Mobile */
+    #menu:before {
+        content: '☰';
+        color: #333; /* Dark color for the toggle */
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    #menu.show ul {
+        display: flex;
+    }
+}

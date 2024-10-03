@@ -1,0 +1,91 @@
+/* Section Styling */
+#education {
+    padding: 50px;
+    background-color: #CAF4FF; /* Light blue background */
+    color: #215893; /* Dark blue text */
+    text-align: center;
+}
+
+#education h1 {
+    font-size: 36px;
+    color: #007BFF; /* Bright blue heading */
+    margin-bottom: 40px;
+}
+
+/* Education Container */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Institution Entry */
+.institution {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #A0DEFF; /* Background for each institution */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.institution:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Logo container */
+.logo {
+    width: 150px;
+    height: 150px;
+    background-image: url('./../assets/logos-sprite.png');
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+/* Specific Logo Positions */
+.scaler {
+    background-position: -150px -130px;
+}
+
+.bits {
+    background-position: -150px 0;
+}
+
+.cambridge {
+    background-position: 0 -150px;
+}
+
+.woolf {
+    background-position: 0 0;
+}
+
+
+
+/* Institution Details */
+.details h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.details p {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.institution {
+    opacity: 0; /* Initially hidden */
+}

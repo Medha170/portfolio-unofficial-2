@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer is pushed to the bottom */
+}
+
+.content {
+    flex: 1; /* This makes the content area flexible */
+}
+
+.footer {
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #1da1f2; /* Change color on hover */
+}
+
+.footer-text {
+    font-size: 16px;
+    opacity: 0.7; /* Make the text a bit faded */
+}
+
+.footer-text i {
+    color: red; /* Change the color of the heart icon */
+    margin: 0 5px;
+}

@@ -1,0 +1,64 @@
+.projects-section {
+    padding: 40px;
+    background-color: #CAF4FF;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    text-align: left;  /* Align text to the left for better readability */
+}
+
+.project-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    word-wrap: break-word;  /* Break words that are too long */
+    white-space: nowrap;    /* Prevent text from wrapping to the next line */
+    overflow: hidden;       /* Hide any overflow */
+    text-overflow: ellipsis; /* Add ellipsis (...) if the text is too long */
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    word-wrap: break-word;  /* Ensure that description wraps nicely */
+    white-space: normal;    /* Allow description to span multiple lines */
+}
+
+.project-card a {
+    background-color: #A0DEFF;
+    color: #007BFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
